@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form with Validation</title>
+
+    <style>
+        /* input{
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid ;
+        } */
+    </style>
+
+</head>
+
+<body bgcolor="#AFEEEE">
+    <center>
+        <form action="">
+            <table width="400px" bgcolor="white" cellpadding="15px">
+                <caption>
+                    <h2>PRIMEASIA UNIVERSITY</h2>
+                    <p style="margin-top: -20px;"> Star Tower, Ground Floor, 12 Kemal Ataturk Avenue, Dhaka </p>
+                    <h3>Application Form For Admission</h3>
+                </caption>
+                <tr>
+                    <td>Department:</td>
+                    <td>
+                        <select>
+                            <option value="department">Select Department</option>
+                            <option value="cse">CSE</option>
+                            <option value="bba">BBA</option>
+                            <option value="eee">EEE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Year:</td>
+                    <td>
+                        <input type="radio" name="session" value="spring">Spring
+                        <input type="radio" name="session" value="summer">Summer
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student Name:</td>
+                    <td><input type="text" required placeholder="Enter name"></td>
+                </tr>
+                <tr>
+                    <td>Father's Name:</td>
+                    <td><input type="text" required placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Mother's Name:</td>
+                    <td><input type="text" required placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" required placeholder="Enter email"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea rows="4" cols="20" name="address">
+
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student Id:</td>
+                    <td><input type="number" required placeholder="Enter id"></td>
+                </tr>
+                <tr>
+                    <td>UMS Password:</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Waiver:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Nationality:</td>
+                    <td><select>
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="nepal">Nepal</option>
+                            <option value="india">india</option>
+                            <option value="bhutan">Bhutan</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <input type="checkbox"  name="" id="">
+                        </center>
+                    </td>
+                    <td><label for="">I agree with all terms and condition</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="submit"></td>
+                </tr>
+
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
