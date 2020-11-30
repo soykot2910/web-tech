@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internal css</title>
+
+    <style>
+        .wrapper {
+            width: 100vw;
+        }
+
+        .logo {
+            width: 20%;
+            height: 200px;
+            background: red;
+            float: left;
+            text-align: center;
+        }
+
+        .banner {
+            background-color: rgb(148, 121, 121);
+            height: 200px;
+            text-align: center;
+        }
+
+        nav {
+            background: rgb(14, 35, 94);
+            color: white;
+            height: 50px;
+            padding-top: 15px;
+        }
+
+        .home,
+        .service,
+        .about,
+        .contact,
+        .more {
+            width: 20%;
+            float: left;
+            height: 50px;
+        }
+
+        .left-content,
+        .right-content {
+            width: 20%;
+            background-color: rgb(14, 147, 199);
+            height: 500px;
+            float: left;
+        }
+
+        .main-content {
+            width: 60%;
+            height: 500px;
+            background-color: rebeccapurple;
+            float: left;
+        }
+
+        #footer {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(110, 68, 68);
+            display: block;
+            float: left;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="banner">BANNER</div>
+        </div>
+        <nav>
+            <div class="home">Home</div>
+            <div class="service">Service</div>
+            <div class="contact">Contact</div>
+            <div class="about">About</div>
+            <div class="more">More</div>
+        </nav>
+        <main>
+            <div class="left-content">left content</div>
+            <div class="main-content">main content</div>
+            <div class="right-content">right content</div>
+        </main>
+
+        <footer id="footer">
+            <p>FOOTER</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
