@@ -19,12 +19,28 @@ section {
   margin: 0 auto;
   margin-top: 50px;
 }
+.btn {
+  background-color: yellow;
+  padding: 10px 20px;
+  color: black;
+}
+.row {
+  display: flex;
+}
+
+/* start home page */
+header {
+  height: 90vh;
+  background-image: url("./images/slides/slide1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header {
   display: flex;
   height: 10vh;
   background: #ff9100;
-}
-.header-logo {
 }
 
 .nav-links {
@@ -43,15 +59,30 @@ section {
 .nav-links li a:hover {
   color: black;
 }
-header {
-  height: 100vh;
-  background-image: url("./images/slides/slide1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.big-heading {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: rgb(226, 99, 14);
+}
+.big-heading h1 {
+  text-align: start;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.big-heading a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #a88a8a;
+  /* margin-left: 150px; */
 }
 #search {
   width: 100%;
+  margin-top: 0px;
 }
 .search-panel {
   background: url("./images/bg_header.jpg");
@@ -92,19 +123,12 @@ header {
   text-align: center;
   color: black;
 }
-.btn {
-  background-color: yellow;
-  padding: 10px 20px;
-  color: black;
-}
 
 .section-title {
   margin-bottom: 20px;
   font-size: 2rem;
 }
-.row {
-  display: flex;
-}
+
 .card {
   width: 30%;
   background: rgb(223, 215, 215);
@@ -142,6 +166,13 @@ footer li:hover {
 center {
   margin-top: 30px;
 }
+
+/* End Home page */
+
+/* Start about page */
+.achievement-info {
+  margin: 20px 0px;
+}
 .our-team h1,
 .about-us h1 {
   margin-bottom: 10px;
@@ -165,8 +196,16 @@ center {
   margin: 7px;
 }
 
+/* End about page */
+
+/* Start contact page */
+
 .contact .left-content {
   width: 50%;
+}
+.contact .left-content p,
+.contact .left-content .section-heading {
+  margin-left: 10px;
 }
 .contact .mid-content {
   margin-top: -380px;
@@ -198,6 +237,14 @@ center {
 .contact .contact-message {
   padding: 20px;
 }
+.contact input {
+  border: 1px solid black;
+}
+
+/* End contact page */
+
+/* Start project page */
+
 .project .row {
   margin-top: 20px;
 }
@@ -211,6 +258,7 @@ center {
 .portfoli-item img {
   width: 100%;
 }
-.portfoli-item:hover{
-  opacity: .5;
+.portfoli-item:hover {
+  opacity: 0.5;
 }
+/* End project page */
