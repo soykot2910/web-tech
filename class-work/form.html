@@ -10,48 +10,51 @@
 
 <body>
     <div class="form-wrapper">
-        <h3 class="heading">REGISTRATION FORM</h3>
+        <h3 class="heading">Sign Up</h3>
 
         <form action="">
 
             <div class="form-group">
-                <label for="">First Name:</label>
-                <input type="text" placeholder="First Name">
+                <div class="name">
+                    <div class="first-name">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="last-name">
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                </div>
             </div>
 
             <div class="form-group">
-                <label for="">Last Name:</label>
-                <input type="text" placeholder="Last Name">
-            </div>
-
-            <div class="form-group">
-                <label for="">Email Address:</label>
+                <label for="">Email Address</label>
                 <input type="email" placeholder="Email Address">
             </div>
 
             <div class="form-group">
-                <label for="">Password:</label>
+                <label for="">Password</label>
                 <input type="email" placeholder="Enter Password">
             </div>
 
             <div class="form-group">
-                <label for="">Confirm Password:</label>
+                <label for="">Confirm Password</label>
                 <input type="email" placeholder="Confirm Password">
             </div>
             <div class="form-group">
-                <label for="">Date of Birth:</label>
-                <input type="datetime" placeholder="Enter Date of Birth">
+                <label for="">Date of Birth</label>
+                <input type="date" placeholder="Enter Date of Birth">
             </div>
             <div class="form-group">
-                <label for="">Upload Picture:</label>
-                <input type="datetime" placeholder="Upload Picture">
+                <label for="">Upload Picture</label>
+                <input type="file" placeholder="Upload Picture">
             </div>
             <div class="form-group">
-                <label for="">Phone Number:</label>
-                <input type="datetime" placeholder="Enter Mobile Number">
+                <label for="">Phone Number</label>
+                <input type="number" placeholder="Enter Mobile Number">
             </div>
             <div class="form-group">
-                <label for="">Nationality:</label>
+                <label for="">Nationality</label>
                 <select>
                     <option value="bangladesh">Bangladesh</option>
                     <option value="nepal">Nepal</option>
@@ -60,15 +63,22 @@
                 </select>
             </div>
             <div class="form-group ">
-                <label for="">Gender:</label>
+                <label for="">Gender</label>
                 <div class="gender">
-                    <input type="radio" name="gender" value="male">Male
-                    <input type="radio" name="gender" value="female">Female
-                    <input type="radio" name="gender" value="female">Others
+                    <div class="male">
+                        <input type="radio" name="gender" value="male"> Male
+                    </div>
+                    <div class="male">
+                        <input type="radio" name="gender" value="female">  Female
+                    </div>
+                    <div class="male">
+                        <input type="radio" name="gender" value="other"> Other
+                    </div>
+
                 </div>
             </div>
             <div class="form-group">
-                <label for="" class="address">Address:</label>
+                <label for="" class="address">Address</label>
                 <textarea name="" id="" cols="30" rows="6"></textarea>
             </div>
             <div class="form-group">
