@@ -1,0 +1,15 @@
+table {
+  font-size: 20px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+select,
+textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 250px;
+}
+
