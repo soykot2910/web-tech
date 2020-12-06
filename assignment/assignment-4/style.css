@@ -65,7 +65,7 @@ header {
   margin-top: 50px;
   color: #ff9100;
   line-height: 1.2;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 .big-heading h1 {
   text-align: start;
@@ -173,6 +173,9 @@ center {
 /* End Home page */
 
 /* Start about page */
+.about-us .mid-content {
+  margin-top: -50px;
+}
 .achievement-info {
   margin: 20px 0px;
 }
@@ -202,6 +205,26 @@ center {
 
 /* End about page */
 
+/* Start project page */
+
+.project .row {
+  margin-top: 20px;
+}
+.project .section-title {
+  text-align: center;
+  margin: 20px;
+}
+.portfoli-item {
+  width: 30%;
+}
+.portfoli-item img {
+  width: 100%;
+}
+.portfoli-item:hover {
+  opacity: 0.5;
+}
+/* End project page */
+
 /* Start contact page */
 
 .contact .left-content {
@@ -219,6 +242,16 @@ center {
 }
 .contact .form-group {
   color: black;
+}
+.contact label {
+  font-size: 1.2rem;
+}
+.contact input,
+.contact textarea {
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  border: 1px solid black;
 }
 .contact .input-group {
   background: white;
@@ -240,29 +273,10 @@ center {
 }
 .contact .contact-message {
   padding: 20px;
+  margin-bottom: 10px;
 }
-.contact input {
-  border: 1px solid black;
+.contact-info {
+  font-size: 1.2rem;
 }
 
 /* End contact page */
-
-/* Start project page */
-
-.project .row {
-  margin-top: 20px;
-}
-.project .section-title {
-  text-align: center;
-  margin: 20px;
-}
-.portfoli-item {
-  width: 30%;
-}
-.portfoli-item img {
-  width: 100%;
-}
-.portfoli-item:hover {
-  opacity: 0.5;
-}
-/* End project page */
