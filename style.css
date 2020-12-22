@@ -1,0 +1,9 @@
+p{
+    animation: boo duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes boo{
+    0%{
+        
+    }
+}
