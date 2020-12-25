@@ -1,0 +1,187 @@
+/* Start Media Query */
+@media screen and (max-width: 1400px) {
+  .marker {
+    margin-left: 107%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar-link {
+    padding: 8px 12px;
+  }
+  .container {
+    width: 90%;
+  }
+  .socal-icon {
+    bottom: 0%;
+  }
+  .marker {
+    margin-left: 108%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .socal-icon {
+    bottom: 30%;
+  }
+  .brand-title {
+    font-size: 20px;
+  }
+  .navbar-link {
+    padding: 6px 8px;
+  }
+  .container {
+    width: 100%;
+  }
+  .marker {
+    margin-left: 110%;
+  }
+  icon-wrapper .fab {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .socal-icon {
+    bottom: 40%;
+  }
+  .all-education {
+    flex-wrap: wrap;
+  }
+  .education-single {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .education-single-left .education-content {
+    text-align: left;
+    margin-top: -70px;
+  }
+
+  .education-single-left .marker {
+    margin-left: -17px;
+  }
+
+  .marker::before {
+    height: 90px;
+    margin-top: -50px;
+  }
+  .marker::after {
+    height: 90px;
+    margin-top: -45px;
+  }
+  .education-single-right .education-content {
+    margin-left: 0px;
+    margin-top: -25px;
+  }
+  .right-content {
+    margin-top: 0px;
+  }
+  .right-content .marker {
+    margin-right: 50px;
+    margin-top: 40px;
+  }
+  .education-content:first-child {
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
+  .work-description-wrapper h1 {
+    font-size: 20px;
+  }
+  .online-tutorial .single-post {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .single-counter {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .form-group {
+    width: 100%;
+    padding: 0px;
+  }
+  .mid-content {
+    width: 60%;
+  }
+  .icon-wrapper {
+    padding: 0;
+    width: 60%;
+  }
+  .icon-wrapper .fab {
+    padding: 5px;
+    margin-left: 40px;
+  }
+  .post-wrapper {
+    flex-wrap: wrap;
+  }
+  .single-post {
+    width: 45%;
+    margin: 10px auto;
+  }
+  .single-post:last-child {
+    margin: 10px 0;
+    margin-left: 2.5%;
+  }
+  .single-work {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .socal-icon {
+    bottom: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .socal-icon {
+    bottom: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .socal-icon {
+    bottom: 60%;
+  }
+  .single-post {
+    width: 90%;
+  }
+  .icon-wrapper {
+    padding: 0;
+    width: 60%;
+  }
+  .icon-wrapper .fab {
+    padding: 5px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .navbar-toggle {
+    display: none;
+  }
+  .navbar-links {
+    background-color: white;
+  }
+  #navbar .navbar-menu,
+  #navbar.opened .navbar-menu {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: block;
+    height: 100%;
+  }
+
+  #navbar .navbar-links,
+  #navbar.opened .navbar-links {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    list-style-type: none;
+    max-height: max-content;
+    width: 100%;
+    height: 100%;
+  }
+
+  #navbar .navbar-link:last-child {
+    margin-right: 0;
+  }
+}
+
+/* End Media Query */

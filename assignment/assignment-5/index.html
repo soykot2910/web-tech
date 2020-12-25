@@ -7,38 +7,49 @@
     <title>Website clone</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <header>
+    <div>
         <div class="container">
-            <div class="navbar">
-                <div class="brand">
-                    <h3> Shamir Montazid</h3>
-                </div>
-                <ul class="nav-links">
-                    <li class=""><a href="#">Blog</a></li>
-                    <li class=""><a href="#">Education</a></li>
-                    <li class=""><a href="#">Research</a></li>
-                    <li class=""><a href="#">Work experience</a></li>
-                    <li class=""><a href="#">video</a></li>
-                    <li class=""><a href="#">contact</a></li>
-                </ul>
-            </div>
+            <header id="navbar">
+                <nav class="navbar-container container">
+                    <div class="brand-title">
+                        <h3> Shamir Montazid</h3>
+                    </div>
+                    <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-menu">
+                        <ul class="navbar-links">
+                            <li class="navbar-item"><a class="navbar-link" href="#blog-section">Blog</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="#education-section">Education</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="#research-section">Research</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="#work-experience-section">Work
+                                    experience</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="#online-tutorial-section">video</a>
+                            </li>
+                            <li class="navbar-item"><a class="navbar-link" href="#contact-section">contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         </div>
-        <div class="heading-wrapper">
-            <img src="https://www.shamirmontazid.com/storage/cover/1590542265.jpg" alt="" class="img-header">
-            <div class="socal-icon">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-youtube"></i>
-            </div>
+
+        <img src="https://www.shamirmontazid.com/storage/cover/1590542265.jpg" alt="" class="img-header">
+        <div class="socal-icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-youtube"></i>
         </div>
-    </header>
-    <section class="blog">
+    </div>
+    </div>
+    <section class="blog" id="blog-section">
         <h1 class="section-heading">
             Blog
         </h1>
@@ -84,7 +95,7 @@
         </div>
     </section>
 
-    <section class="education">
+    <section class="education" id="education-section">
         <h1 class="section-heading">
             Education
         </h1>
@@ -134,7 +145,7 @@
         </div>
     </section>
 
-    <section class="research">
+    <section class="research" id="research-section">
         <h1 class="section-heading">
             Reasearch
         </h1>
@@ -155,7 +166,7 @@
             <button class="btn-blog btn-research">All Researches</button>
         </div>
     </section>
-    <section class="work-experience education">
+    <section class="work-experience education" id="work-experience-section">
         <h1 class="section-heading">Work Experience</h1>
         <div class="container">
             <div class="work-wrapper">
@@ -196,7 +207,7 @@
         </div>
     </section>
 
-    <section class="online-tutorial blog">
+    <section class="online-tutorial blog " id="online-tutorial-section">
         <h1 class="section-heading">
             Online Tutorials
         </h1>
@@ -208,21 +219,21 @@
         <div class="container">
             <div class="post-wrapper">
                 <div class="single-post">
-                    <iframe width="379" height="214"
+                    <iframe width="100%" height="214"
                         src="https://www.youtube.com/embed/1d6hNHTIdZ8?list=PL1pf33qWCkmgf3H81y15UM3u3ORige4AG"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="single-post">
-                    <iframe width="379" height="214"
+                    <iframe width="100%" height="214"
                         src="https://www.youtube.com/embed/btNmS1Nr1cs?list=PL1pf33qWCkmgc6rGuQgzxysbr6_FaFJ6F"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <div class="single-post">
-                    <iframe width="379" height="214" src="https://www.youtube.com/embed/NhA0cih93GI" frameborder="0"
+                    <iframe width="100%" height="214" src="https://www.youtube.com/embed/NhA0cih93GI" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
@@ -250,7 +261,7 @@
             </div>
         </div>
     </section>
-    <section class="contact education">
+    <section class="contact education" id="contact-section">
         <div class="container">
             <h1 class="section-heading">Contact</h1>
             <p class="">Hi there! Please leave a message and I will reply for sure. You can also set an appointment with
@@ -299,6 +310,7 @@
             </center>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
