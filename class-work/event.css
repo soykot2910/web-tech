@@ -1,0 +1,12 @@
+li {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+
+  .scrolling {
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+  }
+  

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+
+<body>
+    <ol>
+        <li><span>onclick Event:</span>
+            <button onclick="onclickFun()">onclick</button>
+            <p id='click'>when you click backgroud will be red</p>
+        </li>
+        <li><span>onmouseover Event:</span>
+            <button onmouseover="onmouseoverFun()">onmouseover</button>
+        </li>
+        <li>
+            <!-- The onblur event occurs when an object loses focus. -->
+            <span>onblue Event:</span>
+            Enter Your Name:<input type="text" id="name" onblur="onblueFun()">
+        </li>
+
+        <li>
+            <span>onfocus</span>
+            Enter your name: <input type="text" onfocus="onfocusFun(this)">
+        </li>
+        <li>
+            <span>onkeypress</span>
+            <input type="text" onkeypress="onkeypressFun()">
+        </li>
+
+        <li>
+            <!-- Execute a JavaScript when submitting a search: -->
+            <span>onsearch</span>
+            <input type="search" id="myInput" onsearch="onsearchFun()">
+            <p id="search"></p>
+        </li>
+
+
+    </ol>
+
+    <script src="event.js"></script>
+</body>
+
+</html>

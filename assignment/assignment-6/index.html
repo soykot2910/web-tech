@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <center>
+        <h1> JavaScript Events</h1>
+    </center>
+
+    <ol>
+        <li><span>onclick Event(conter):</span>
+            <p id="count">0</p>
+            <button onclick="increment()" class="+">+</button>
+            <button onclick="decrement()" class="-">-</button>
+        </li>
+        <li><span>onmouseover Event:</span>
+            <button onmouseover="sayHello()">click</button>
+        </li>
+        <li>
+            <!-- The onblur event occurs when an object loses focus. -->
+            <span>onblue Event:</span>
+            Enter Your Name:<input type="text" id="name" onblur="onblueFun()">
+        </li>
+        <li><span>onchange Event:</span>
+            <select id="mySelect" onchange="onchangeFun()">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Volvo">Volvo</option>
+            </select>
+            <p id="onchange"></p>
+        </li>
+        <li>
+            <span>onfocus</span>
+            Enter your name: <input type="text" onfocus="myFunction(this)">
+        </li>
+        <li>
+            <span>onkeypress</span>
+            <input type="text" onkeypress="onkeypressFun()">
+        </li>
+        <li>
+            <!-- Execute a JavaScript when a <div> element is being scrolled:? -->
+
+            <span>onscroll</span>
+            <div class="scrolling" onscroll="onscrollFun()">In my younger and more vulnerable years my father gave me
+                some advice that
+                I've been turning over in my mind ever since.
+                <br><br>
+                'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world
+                haven't had the advantages that you've had.'
+            </div>
+
+            <p>Scrolled <span id="scroll">0</span> times.</p>
+        </li>
+        <li>
+            <!-- Execute a JavaScript when submitting a search: -->
+            <span>onsearch</span>
+            <input type="search" id="myInput" onsearch="onsearchFun()">
+            <p id="search"></p>
+        </li>
+        <li>
+            <span>onreset</span>
+            <!-- Execute a JavaScript when a form is reset: -->
+            <form onreset="onresetFun()">
+                <input type="text" placeholder="Enter something">
+                <input type="reset">
+            </form>
+        </li>
+        <li>
+            <p ondblclick="ondblclickFun ()">Double-click this paragraph to trigger a function.</p>
+            <p id="dblclick "></p>
+        </li>
+        <li>
+            <form onsubmit="onsubmitFun ()">
+                Enter name: <input type="text" name="fname">
+                <input type="submit" value="Submit">
+            </form>
+        </li>
+        <li>
+            <input type="text" oncopy="oncopyFun ()" value="Try to copy this text">
+            <p id="copy "></p>
+
+        </li>
+        <li>
+            <input type="text" oncut="oncutFun ()" value="Try to cut this text">
+            <p id="cut "></p>
+
+        </li>
+        <li>
+            <p onload="onloadFun ()"></p>
+            <h1>Hello World!</h1>
+
+        </li>
+        <li>
+            <form>
+                Name: <input type="text" oninvalid="alert('You must fill out the form!');" name="fname" required>
+                <input type="submit" value="Submit">
+            </form>
+            <p>If you click submit, without filling out the text field,
+                an alert message will occur.</p>
+
+        </li>
+    </ol>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
