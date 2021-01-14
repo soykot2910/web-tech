@@ -4,23 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
+    <title>Form using php</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
-
-    
-   
-
-<form action="">
-
-    <label for=""></label>
-</form>
-
+    <div class="form-wrapper">
+        <div class="login">
+            <i class="fas fa-rocket"></i>
+            <h1>Welcome</h1>
+            <h5>You are 30 seconds away form earning your own money!</h5>
+            <button class=" btn btn-login">Login</button>
+        </div>
+        <div class="reg-form">
+            <h1>Apply as a Employee</h1>
+            <form action="" method="post">
+                <div class="reg-left">
+                    <div class="form-group">
+                        <input type="text" name="first_name" placeholder="First Name*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="last_name" placeholder="Last Name*" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Password*">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="cpassword" placeholder="Confirm Password*">
+                    </div>
+                    <div class="radio-wrapper">
+                        <input type="radio" name="gender" value="male">
+                        <label for="">Male</label>
+                        <input type="radio" name="gender" value="female">
+                        <label for="">Female</label>
+                    </div>
+                </div>
+                <div class="reg-right">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" placeholder="Your Phone*">
+                    </div>
+                    <div class="form-group">
+                        <select name="country" id="">
+                            <option>Please select your Country</option>
+                            <option value="bd">Bangladesh</option>
+                            <option value="in">India</option>
+                            <option value="pk">Pakistan</option>
+                            <option value="sr">Sri lanka</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" name="date" placeholder="Enter Your Birth Date*">
+                    </div>
+                    <input type="submit" name="submit" class="btn btn-register" value="register" />
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

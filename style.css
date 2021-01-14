@@ -1,9 +1,146 @@
-p{
-    animation: boo duration timing-function delay iteration-count direction fill-mode;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.form-wrapper {
+  background: linear-gradient(100deg, #021bd7 0%, #2fd4f4 80%);
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.login {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  padding: 2%;
 }
 
-@keyframes boo{
-    0%{
-        
-    }
+.login .fas {
+  transform: rotate(-45deg);
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+.login h1 {
+  font-weight: 300;
+}
+.login h5 {
+  font-weight: 300;
+  margin: 20px;
+}
+.btn {
+  padding: 7px 40px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+.reg-form {
+  background-color: #ece8e8;
+  margin: 40px;
+  margin-left: 0;
+  width: 70%;
+  border-radius: 10% 0 0 10%;
+  padding: 7%;
+}
+.reg-form h1 {
+  text-align: center;
+  color: #6d6b6b;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+}
+.form-group {
+  margin: 15px;
+  width: 250px;
+}
+.radio-wrapper {
+  display: flex;
+  margin-left: 5px;
+}
+label {
+  margin: 0;
+}
+input,
+select {
+  padding: 8px;
+  border: 1px solid #b5afaf;
+  border-radius: 5px;
+  width: 95%;
+}
+
+input[type="radio"] {
+  width: 30px;
+}
+
+input:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+label {
+  margin-top: -5px;
+}
+
+.btn-register {
+  background-color: #0b40dd;
+  color: white;
+  border: 1px solid #0b40dd;
+  margin-left: 125px;
+  margin-top: 5px;
+  width: 130px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1050px) {
+  .form-wrapper {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .form-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg-form {
+    width: 100%;
+  }
+  .login {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .login .fas {
+    margin-top: 20px;
+  }
+  .btn-login {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  form {
+    flex-direction: column;
+  }
+  .reg-form {
+    width: 90%;
+    border-radius: 0;
+    margin: 0 auto;
+    padding: 7%;
+  }
 }
